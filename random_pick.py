@@ -2,13 +2,13 @@ import os
 import numpy as np
 
 def search(dirname, extension='.sh'):
-	filenames = os.listdir(dirname)
-	result_lists = []
-	for filename in filenames:
-		ext = os.path.splitext(filename)[-1]
-		if ext == extension:
-			result_lists.append(filename)
-	return result_lists
+    filenames = os.listdir(dirname)
+    result_lists = []
+    for filename in filenames:
+        ext = os.path.splitext(filename)[-1]
+        if ext == extension:
+            result_lists.append(filename)
+    return result_lists
 
 
 current_folder = os.getcwd()
