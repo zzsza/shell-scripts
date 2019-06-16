@@ -10,7 +10,9 @@ def search(dirname, extension='.sh'):
 			result_lists.append(filename)
 	return result_lists
 
+
 current_folder = os.getcwd()
 script_folder = current_folder + '/scripts/'
 script_lists = search(script_folder)
+
 print("문제를 풀어보세요 : ", np.random.choice(script_lists, 1))
