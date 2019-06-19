@@ -5,6 +5,7 @@ DATA_DIR=/Users/byeon/Downloads
 cd $DATA_DIR
 
 cp cars_train.tgz ${TMPDIR:=/tmp}
+
 # TMPDIR값이 있으면 그 값을, 없으면 /tmp를 사용
 # :=는 변수에 값이 설정되어 있는지 확인해서 값을 대입
 # ${변수명:=값} : 변수가 설정되어 있지 않거나 비어 있을 때 지정한 값 대입
