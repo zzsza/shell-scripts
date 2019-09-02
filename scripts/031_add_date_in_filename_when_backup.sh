@@ -5,7 +5,7 @@
 config='myapp.conf'
 back_filename="${config}.$(date '+%Y%m%d')"
 
-# 만약 date까지 중복이 있따면 초까지 넣어서 백업 파일 작성
+# 만약 date까지 중복이 있다면 초까지 넣어서 백업 파일 작성
 if [ -e $back_filename ]; then
   back_filename="${config}.$(date '+%Y%m%d%H%M.%S')"
 fi
